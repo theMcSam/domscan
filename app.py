@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    ...
+    return "Homes"
 
 @app.route("/search")
 def search():
@@ -38,4 +38,4 @@ def search():
     return results
 
 if __name__ == '__main__':
-    app.run('127.0.0.1', 5000)
+    app.run('0.0.0.0', 10000)
